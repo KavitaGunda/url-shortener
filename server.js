@@ -31,5 +31,5 @@ app.get('/:shortUrl', async (req, res) => {
     res.redirect(shortUrl.full);
 })
 
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 3000;
 app.listen(port, console.log(`Url shortener app successfully started and listening at : http://localhost:${port}`));
